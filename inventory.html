@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Inventory Wk 22</title>
+    <script type="text/javascript" src="d3/d3.js"></script>
+  </head>
+  <body>
+  <script type="text/javascript">
+    var inv = [];
+    inv = [
+    {
+      "Fruit":"Apple",
+      "Mon":18,
+      "Tue":10,
+      "Wed":5,
+      "Thu":1,
+      "Fri":20
+    },
+    {
+      "Fruit":"Orange",
+      "Mon":12,
+      "Tue":8,
+      "Wed":7,
+      "Thu":2,
+      "Fri":15
+    },
+    {
+      "Fruit":"Star Fruit",
+      "Mon":3,
+      "Tue":3,
+      "Wed":3,
+      "Thu":2
+      ,"Fri":4
+    },
+    {
+      "Fruit":"Kiwi",
+      "Mon":8,
+      "Tue":6,
+      "Wed":4,
+      "Thu":2,
+      "Fri":10
+    }
+  ];
+    console.log(inv);
+  </script>
+  <p> JS Challenge</p>
+  <p> Find data:Type inv</p>
+  <p> See data:Type console.table(inv); into your console</p>
+  <p>C1: Report how many items are in the inventory</p>
+  <!-- console.log(inv.length);
+  Answer: 4-->
+  <p>C2: List the items in inventory.</p>
+    <!--
+      var cat = [];
+      inv.forEach(function(d){
+        cat.push(d.Fruit);
+      });
+      cat;
+      -->
+  <p>C3: How many apples were in the inventory on Monday</p>
+  <!--for (i=0; i<inv.length; i++){
+   if (inv[i].Fruit==="Apple"){
+      console.log("Monday had an inventory of " + inv[i].Mon+ " "+ inv[i].Fruit +"s");
+      };
+      Answer: 18
+}; -->
+  <p>C4: Create an array of days contained in this inventory</p>
+  <!--
+  Object.keys(inv[0]).filter(
+   function(d){
+   return d!="Fruit"
+   }); -->
+  <p>What was the inventory of items per day?</p>
+  <p>Create an object that contains the items and quantities in inventory on Thursday.</p>
+  <p>Create an array with the items and quantities in inventory on Wednesday. </p>
+
+  </body>
+</html>
